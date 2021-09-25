@@ -18,7 +18,7 @@ app.use(express.json());
 // xu ly from submit
 app.use(morgan('combined'))
 // templete engie
-app.engine('hbs',handlebars({
+           app.engine('hbs',handlebars({
   extname: '.hbs'
 }))
 app.set('view engine','hbs')
@@ -34,3 +34,4 @@ app.set('views',path.join(__dirname,'resources/views'))
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+// hello world

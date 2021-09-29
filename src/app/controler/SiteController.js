@@ -2,6 +2,7 @@ class SiteController{
     home(rep, res){
     // get /home
      res.render('home')
+  
     }
 
 

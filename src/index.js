@@ -22,12 +22,12 @@ app.use(express.json());
 // xu ly from submit
 app.use(morgan('combined'))
 // templete engie
-           app.engine('hbs',handlebars({
+app.engine('hbs',handlebars({
   extname: '.hbs'
 }))
 app.set('view engine','hbs')
 // set view handlebar
-app.set('views',path.join(__dirname,'resources/views'))
+app.set('views',path.join(__dirname,'resources','views'))
 // console.log('PATH:', path.join(__dirname,'resources/views'))
 
 // tao route duong dan
@@ -36,7 +36,7 @@ app.set('views',path.join(__dirname,'resources/views'))
 
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`App listening at http://localhost:${port}`)
 })
 // hello world
 //long test
